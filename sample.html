@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/bootstrap.css" class="">
+    <script src="js/bootstrap.js"></script> 
+    <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
+    <script src="https://kit.fontawesome.com/0c07a71a4e.js" crossorigin="anonymous"></script>
+
+    <script>
+
+      function validate()
+      {
+        var name=document.getElementById("participant name");
+        var cname=document.getElementById("college name");
+        var branch=document.getElementById("branch");
+        var city=document.getElementById("city");
+        var email=document.getElementById("email");
+        var trans=document.getElementById("trans");
+
+        if(name.value.trim()=="")
+        {
+			  alert("please enter the participant name");
+		  	return false;
+		    }
+      	else if(cname.value.trim()=="")
+	    	{
+	  		alert("please enter college name");
+		  	return false;
+	    	}
+      	else if(city.value.trim()=="")
+	    	{
+	    	alert("enter the city name");
+		    return false;
+	    	}
+      	else if(branch.value.trim()=="")
+	    	{
+		    alert("enter your branch name")
+	    	return false;
+	    	}
+      	else if(email.value.trim()=="")
+      	{
+    		alert("please enter the email");
+    		return false;
+        }
+      	else if(trans.value.trim()=="")
+	    	{
+	  		alert("please enter the transaction/payment reference id");
+	  		return false;
+	  	  }	
+        else 
+        {
+          return true;
+        }	
+      }
+
+        function GetSelectedTextValue(ename) {
+        var selectedText = ename.options[ename.selectedIndex].innerHTML;
+        var selectedValue = ename.value;
+        alert("you have selected the event:" + selectedValue + " please conform to get the QR code" );
+      }
+      
+      function lop(tsize){
+        var val=document.getElementById("tsize").value;
+        var selectedText = tsize.options[tsize.selectedIndex].innerHTML;
+        var selectedValue = tsize.value;
+        alert("your team consist of:" + selectedValue );
+
+        if(val==1){
+          var img = document.createElement("img");
+          img.src = "77.jfif";
+          img.setAttribute("style", "margin-top: 80px;");
+
+          var div = document.getElementById("x");
+          div.appendChild(img);
+        div.setAttribute("style", "text-align:center");
+        }
+        else if(val==2){
+          var img = document.createElement("img");
+          img.src = "77.jfif";
+          img.setAttribute("style", "margin-top: 80px;");
+
+          var div = document.getElementById("x");
+          div.appendChild(img);
+        div.setAttribute("style", "text-align:center");
+
+        }
+        else if(val==3){
+          var img = document.createElement("img");
+          img.src = "77.jfif";
+          img.setAttribute("style", "margin-top: 80px;");
+
+          var div = document.getElementById("x");
+          div.appendChild(img);
+        div.setAttribute("style", "text-align:center");
+
+        }
+        else if(val==4){
+          var img = document.createElement("img");
+          img.src = "77.jfif";
+          img.setAttribute("style", "margin-top: 80px;");
+
+          var div = document.getElementById("x");
+          div.appendChild(img);
+        div.setAttribute("style", "text-align:center");
+
+        }
+        else if(val==5){
+          var img = document.createElement("img");
+          img.src = "77.jfif";
+          img.setAttribute("style", "margin-top: 80px;");
+
+          var div = document.getElementById("x");
+          div.appendChild(img);
+        div.setAttribute("style", "text-align:center");
+
+        }
+        else{
+          var img = document.createElement("img");
+          img.src = "77.jfif";
+          img.setAttribute("style", "margin-top: 80px;");
+
+          var div = document.getElementById("x");
+          div.appendChild(img);
+        div.setAttribute("style", "text-align:center");
+        }
+      }
+        
+ 
+    </script>
+    <title>Document</title>
+    <style> 
+    #kop{
+      background-image: url("gif.gif.gif");
+      background-repeat: repeat;
+    }
+    .heading{
+      color: rgb(31, 178, 197);
+        font-size: 40px;
+        font-family:Helvetica;
+        padding-top: 10px;
+
+    }
+    #pp{
+      background-color: black;
+    }
+      </style>
+</head>
+<body>
+   
+      <div  id="kop">
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+          <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+          <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+          <a href="sample.html" class="w3-bar-item w3-button">PAYMENT</a>
+          <a href="#" class="w3-bar-item w3-button">HELP</a>
+        </div>
+        
+        <div class="w3-teal" id="sidebar">
+          <button class="w3-button w3-teal w3-xlarge" id="button" onclick="w3_open()">☰</button>   
+        </div>
+    
+    <form onsubmit="return validate()" action="connection.php" method="post">
+      <div>
+        <center>
+        <h1 class="heading"><b>REGISTER NOW</b></h1>
+      <table id="pp">
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text"  width="200">participant name</span>
+            <input type="text" id="participant name"  class="form-control" name="pname" placeholder="participant name" aria-label="participant name" aria-describedby="basic-addon1">
+            </div>
+          </th>
+          <th rowspan="9">
+            <div id="x" class="input-group mb-3">
+              
+              </div>
+          </th>
+        </tr>
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text"  width="200">college name</span>
+            <input type="text" id="college name" class="form-control" name="clgname" placeholder="college name" aria-label="participant name" aria-describedby="basic-addon1">
+            </div>
+          </th>
+        </tr>
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text"    width="200">city</span>
+            <input type="text" id="city" class="form-control" name="city"  placeholder="city" aria-label="participant name" aria-describedby="basic-addon1">
+            </div>
+          </th>
+        </tr>
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text">branch</span>
+            <input type="text"  id="branch" placeholder="branch name" name="branch" class="form-control" id="branch" aria-describedby="basic-addon3">
+            </div>
+          </th>
+        </tr>
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text" >email</span>
+            <input type="email" placeholder="email" class="form-control" name="email" id="email" aria-describedby="basic-addon3">
+            </div>
+          </th>
+        </tr>
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text" >contact number</span>
+            <input type="text" placeholder="contact number" class="form-control" name="contact" id="contact" aria-describedby="basic-addon3">
+            </div>
+          </th>
+        </tr>
+        
+        <tr align=center>
+          <th>
+            <div> 
+            <select class="form-select" id="ename" name="ename" onchange="GetSelectedTextValue(this)" aria-label="Default select example">
+            <option value="hop">select the event</option>
+            <option value="skit">skit</option>
+            <option value="singing">singing</option>
+            <option value="short film">short film</option>
+            </select>
+            </div>
+          </th>
+        </tr>
+        <br>
+        <tr align=center>
+          <th>
+            <div>
+              <select class="form-select" id="tsize" name="tsize" onchange="lop(this)"  aria-label="Default select example">
+              <option value="select">team size</option>
+              <option value="1">1 member</option>
+              <option value="2">2 members</option>
+              <option value="3">3 members</option>
+              <option value="4">4 members</option>
+              <option value="5">5 members</option>
+              <option value="6">6 members</option>
+              </select>
+            </div>
+          </th>
+        </tr>
+        <br>
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text"  width="200">team members names</span>
+            <input type="text" id="team members" class="form-control" name="tmembers" placeholder="team members" aria-label="participant name" aria-describedby="basic-addon1">
+            </div>
+          </th>
+        </tr>
+        <tr align=center>
+          <th>
+            <div class="input-group mb-3">
+            <span class="input-group-text"  width="200">transaction id</span>
+            <input type="text" class="form-control" id="trans" name="trans" placeholder="transaction id" aria-label="participant name" aria-describedby="basic-addon1">
+            </div>
+          </th>
+        </tr>
+        <br>
+        <tr align=center>
+          <th>
+            <div class="col-12">
+            <button class="btn btn-primary" value="submit" name="submit" type="submit">Submit form</button>
+            </div>
+          </th>
+        </tr>
+    </table>
+    </center>
+    </form>
+    </div>
+    
+</body>
+</html>

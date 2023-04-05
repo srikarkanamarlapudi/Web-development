@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <script src="js/bootstrap.js"></script> 
+    <script src="https://kit.fontawesome.com/0c07a71a4e.js" crossorigin="anonymous"></script>
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+      </script>
+           
+    <style> 
+    #kop{
+      background-color: rgba(243, 239, 234, 0.959);
+    }
+    .sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+    .logo{
+      color: chartreuse;
+      font-size: 35px;
+      font-family: Arial;
+      padding-left: 20px;
+      float: left;
+      padding-top: 10px;
+    }
+    .home{
+      color:rgb(226, 241, 229);
+      font-size: 30px;
+      font-family: Arial;
+      padding-left: 10px;
+      float: left;
+      padding-top: 5px;
+    }
+    .payment{
+      color: rgb(226, 241, 229);
+      font-size: 30px;
+      font-family: Arial;
+      padding-left: 10px;
+      float: left;
+      padding-top: 5px;
+    }
+    
+    .help{
+        color: rgb(226, 241, 229);
+        font-size: 30px;
+        font-family: Arial;
+        padding-left: 10px;
+        float: left;
+        padding-top: 5px;
+    }
+
+    .img{
+      width: 65%;
+      border-radius: 50%;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+    .table{
+      border: black;
+      text-align: center;
+      color: black;
+      align-items: center;
+    }
+    #kop{
+       background-image:url('myImage.gif'); 
+       background-repeat:repeat; 
+    }
+    #pp{
+      background-color: cadetblue;
+    }
+    .table{
+      color: white;
+    }
+    #sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+    
+    
+      </style>
+
+    <title>Document</title>
+    
+</head>
+<body>
+  <div id="kop">
+   <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+</div>
+
+  <br>
+  <div class="poster">
+    <center><img src="poster.jpg"></center>
+  </div>
+  <br>
+  <div> 
+    <center>
+    <h1>
+    <table class="table">
+      <tr>
+      <th> DISCRIPTION ABOUT CODE-HACKTHON</th>        
+      </tr>
+      <tr> 
+        <td>........................................</td>
+      </tr> 
+      <tr>
+        <td>syllabus:c,c++,python,html</td>
+      </tr>
+      <tr>
+        <td>contact:9999999999</td>
+      </tr>
+    </table>
+    </h1>
+    </center>
+  </div>
+  
+  <center>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">  
+      <div class="card"  id="pp" style="width: 18rem;">
+        <img src="pop.jpg" class="img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">COORDINATOR-1</h5>
+          <p class="card-text">NAME-.....</p>
+          <p class="card-text">ROLLNO-.....</p>
+          <p class="card-text">BRANCH-.....</p>
+          </div>
+      </div>
+      </div>
+      <div class="col-4">
+      <div class="card" id="pp" style="width: 18rem;">
+        <img src="pop.jpg" class="img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">COORDINATOR-2</h5>
+          <p class="card-text">NAME-.....</p>
+          <p class="card-text">ROLLNO-.....</p>
+          <p class="card-text">BRANCH-.....</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-4">
+        <div class="card"  id="pp" style="width: 18rem;">
+          <img src="pop.jpg" class="img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">COORDINATOR-3</h5>
+            <p class="card-text">NAME-.....</p>
+            <p class="card-text">ROLLNO-.....</p>
+            <p class="card-text">BRANCH-.....</p>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  </center>
+  
+  </div>
+</body>
+</html>

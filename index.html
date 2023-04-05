@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mru</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/bootstrap.css" class="">
+    <script src="js/bootstrap.js"></script> 
+    <script src="https://kit.fontawesome.com/0c07a71a4e.js" crossorigin="anonymous"></script>
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+      </script>
+    <style> 
+    #kop{
+      background-color: rgba(243, 239, 234, 0.959);
+    }
+    .head{
+      background-color: black;
+      color: white;
+      font-style:oblique;
+      font-size: 30px;
+    }
+    #kop{
+      background-image: url("gif.gif.gif");
+      background-repeat: repeat;
+    }
+    #h1{
+      font-style: italic;
+      color: whitesmoke;
+      background-color: rgb(114, 142, 221);
+    }
+    .card{
+      padding-left: 20px;
+      padding-right: 20px;
+      box-shadow: 0 5px 30px 0 rgba(185, 173, 173, 0.2);
+      background-color: rgba(51, 48, 48, 0.2);
+      transition: 0.5s;
+    }
+    .card-title{
+      color: white;
+      font-style: italic;
+      font-size: 20px;
+    }
+    .m{
+      font-size: 30px;
+      color: silver;
+      padding-left: 50px;
+      padding-right: 70px;
+      text-shadow: white;
+    }
+  
+    </style>
+
+    <title>Document</title>
+    
+</head>
+<body>
+  <div id="kop">
+  
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+  <a href="sample.html" class="w3-bar-item w3-button">PAYMENT</a>
+  <a href="#" class="w3-bar-item w3-button">HELP</a>
+</div>
+
+<div class="w3-teal" id="sidebar">
+  <button class="w3-button w3-teal w3-xlarge" id="button" onclick="w3_open()">☰</button>   
+</div>
+<div class="m">
+  <p> <center> <b> WELCOME TO MALLAREDDY UNIVERSITY TECH FEST </b></center> </p>
+</div>
+  <div  class="gop">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="techfest.jpg" class="d-block w-100 h-40" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="techfest1.png" class="d-block w-100 h-60" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="techfest2.png" class="d-block w-100 h-60" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <div class="head">
+      <p> <marquee> TECHINAL EVENTS</marquee> </p>
+    </div>
+      
+      <center>
+          <div class="col-4">
+            <div class="card" >
+            <img src="codehackton.jpg" class="card-img-top" >
+            <div class="card-body">
+            <h5 class="card-title">Code-Hackthon</h5>
+            <a href="sample.html" class="btn btn-primary">register</a> <br><br> <a href="explore.html" class="btn btn-primary">explore</a>
+            </div>
+            </div>
+          </div>
+          <br>
+          <div class="col-4">
+            <div class="card" >
+            <img src="paperpresentation.jpg" class="card-img-top" >
+            <div class="card-body">
+            <h5 class="card-title">Paper Presentation</h5>
+            <a href="sample.html" class="btn btn-primary">register</a>  <br><br> <a href="explore.html" class="btn btn-primary">explore</a>
+          </div>
+          </div>
+        </div>
+       </center> 
+       
+        
+    <div class="head">
+      <p> <marquee> NON-TECHNICAL EVENTS &nbsp &nbsp &nbsp OPEN FOR EVERY ONE &nbsp &nbsp &nbsp REGISTER NOW  &nbsp &nbsp<a href="sample.html" >CLICKHERE</a></marquee> </p>
+    </div>
+          <center>
+                  <div class="col-4">
+                    <div class="card" >
+                      <img src="singing.jpg" class="card-img-top" >
+                      <div class="card-body">
+                      <h5 class="card-title">Singing</h5>
+                      <a href="sample.html" class="btn btn-primary">register</a> <br><br>  <a href="explore.html" class="btn btn-primary">explore</a>
+                      </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-4">
+                      <div class="card" >
+                      <img src="skit.jpg" class="card-img-top" >
+                      <div class="card-body">
+                      <h5 class="card-title">Skits</h5>
+                      <a href="sample.html" class="btn btn-primary">register</a>  <br><br> <a href="explore.html" class="btn btn-primary">explore</a>
+                      </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-4">
+                      <div class="card" >
+                      <img src="haunted.jpg" class="card-img-top" >
+                      <div class="card-body">
+                      <h5 class="card-title">Haunted House</h5>
+                      <a href="sample.html" class="btn btn-primary">register</a> <br><br>  <a href="explore.html" class="btn btn-primary">explore</a>
+                      </div>
+                      </div>
+                      <br>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                      <img src="photography.jpg" class="card-img-top" >
+                      <div class="card-body">
+                      <h5 class="card-title">Photography & Videography</h5>
+                      <a href="sample.html" class="btn btn-primary">register</a> <br><br>  <a href="explore.html" class="btn btn-primary">explore</a>
+                      </div>
+                      </div>
+                    </center>  
+         
+</div>             
+</body>
+</html>
